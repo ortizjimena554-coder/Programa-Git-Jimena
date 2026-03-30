@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Vital Work - Citas Médicas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>🏥 Vital Work</h1>
+<p>Gestión de Citas Médicas</p>
+
+<nav>
+
+<a href="#registro">Registro</a>
+<a href="#login">Login</a>
+<a href="#citas">Solicitar Cita</a>
+
+</nav>
+
+</header>
+
+
+<section id="registro" class="formulario">
+
+<h2>Registro de Usuario</h2>
+
+<form>
+
+<label>Nombre</label>
+<input type="text" required>
+
+<label>Correo</label>
+<input type="email" required>
+
+<label>Contraseña</label>
+<input type="password" required>
+
+<button>Registrarse</button>
+
+</form>
+
+</section>
+
+
+
+<section id="login" class="formulario">
+
+<h2>Inicio de Sesión</h2>
+
+<form>
+
+<label>Correo</label>
+<input type="email">
+
+<label>Contraseña</label>
+<input type="password">
+
+<button>Ingresar</button>
+
+</form>
+
+</section>
+
+
+
+<section id="citas" class="formulario">
+
+<h2>Solicitar Cita Médica</h2>
+
+<form id="formCita">
+
+<label>Nombre del paciente</label>
+<input type="text" id="nombre" required>
+
+<label>Especialidad</label>
+
+<select id="especialidad">
+<option>Medicina General</option>
+<option>Odontología</option>
+<option>Pediatría</option>
+<option>Cardiología</option>
+</select>
+
+<label>Fecha</label>
+<input type="date" id="fecha" required>
+
+<label>Hora</label>
+<input type="time" id="hora" required>
+
+<button type="submit">Agendar Cita</button>
+
+</form>
+
+</section>
+
+
+
+<section class="tablaCitas">
+
+<h2>Citas Programadas</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Paciente</th>
+<th>Especialidad</th>
+<th>Fecha</th>
+<th>Hora</th>
+<th>Acciones</th>
+</tr>
+
+</thead>
+
+<tbody id="tablaCitas">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+<footer>
+
+<p>Vital Work © 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
